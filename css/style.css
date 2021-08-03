@@ -1,0 +1,141 @@
+/* ----- General Settings ----- */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   background: url('../img/wood.png');
+   font-family: 'trebuchet ms', sans-serif;
+}
+h1 {
+   font-size: 25px;
+   text-transform: uppercase;
+}
+h3 {
+   color: #555;
+   font-size: 25px;
+   font-weight: lighter;
+}
+p {
+   font-size: 17px;
+   line-height: 30px;
+}
+ul li {
+   list-style: none;
+}
+
+/* ----- Utility Classes ----- */
+.container {
+   width: 1000px;
+   margin: 20px auto;
+}
+.clearfix::after {
+   content: '';
+   display: table;
+   clear: both;
+}
+.fl {
+   float: left;
+}
+.style {
+   background: #fff;
+   border-radius: 5px;
+}
+.text-shadow {
+   text-shadow: 2px 2px #ccc;
+}
+.mb-40 {
+   margin-bottom: 40px;
+}
+
+/* ----- Header ----- */
+header {
+   color: #fff;
+   text-align: center;
+}
+#logo {
+   background-image: url('../img/forest.png');
+   background-position: center;
+   height: 380px;
+   border: 10px solid;
+   position: relative;
+}
+#logo > div {
+   position: absolute;
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 50%;
+}
+#logo img {
+   width: 500px;
+}
+nav {
+   background: #666;
+   height: 50px;
+}
+nav ul li {
+   display: inline-block;
+   line-height: 50px;
+   padding: 0 10px;
+   font-size: 11px;
+   font-weight: bold;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+nav ul li:hover {
+   background: rgba(0,0,0,.5);
+}
+
+/* ----- Main ----- */
+main {
+   margin: 10px 0;
+}
+.section-left, .section-right {
+   width: 20%;
+}
+.section-center {
+   width: 60%;
+   padding: 0 50px;
+}
+.section-left .style {
+   padding: 10px;
+}
+:is(.section-center, .section-right) .style {
+   padding: 20px;
+}
+.section-left h3 {
+   float: right;
+   width: 80%;
+}
+.section-left li {
+   font-size: 17px;
+   font-weight: bold;
+   margin: 8px 0;
+}
+.section-left a {
+   color: #28bc00;
+   text-decoration: none;
+}
+
+/* ----- Footer ----- */
+footer {
+   padding: 5px;
+   text-align: center;
+}
+.credits {
+   color: #bbb;
+   font-style: italic;
+   border-bottom: 1px solid;
+}
+.socials {
+   line-height: 100px;
+   text-align: center;
+}
+.socials .fl {
+   width: calc(100% / 3);
+}
+.socials img {
+   height: 40px;
+   vertical-align: middle;
+}
