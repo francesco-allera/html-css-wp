@@ -1,0 +1,134 @@
+/* common settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../img/wood.png");
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    width: 1000px;
+    margin: 1.5rem auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix > * {
+    float: left;
+}
+.style {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: .3rem;
+}
+.margin-btm {
+    margin-bottom: 40px;
+}
+h2 {
+    color: #555;
+    font-weight: 400;
+}
+p {
+    line-height: 1.75;
+    font-weight: 600;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    color: #fff;
+    font-size: .75rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+#logo {
+    height: 370px;
+    background-image: url("../img/forest.png");
+    background-position: center;
+    position: relative;
+    border: 10px solid;
+}
+.logo-wrapper {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.logo-wrapper img {
+    max-width: 500px;
+    max-height: 75%;
+}
+nav {
+    height: 50px;
+    background-color: #666;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0 .75em;
+    line-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+/* main */
+main {
+    margin: .75rem 0;
+}
+.center {
+    width: 60%;
+    padding: 0 50px;
+}
+.center h2 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px #ccc;
+}
+.left, .right {
+    width: 20%;
+}
+.left .style {
+    padding: 10px;
+}
+.left h2 {
+    float: right;
+    width: 80%;
+}
+.left li {
+    font-weight: bold;
+    margin: .5em 0;
+}
+.left a {
+    color: #28bc00;
+}
+
+/* footer */
+footer.style {
+    color: #bbb;
+    padding: .35em;
+    text-align: center;
+}
+footer h4 {
+    font-style: italic;
+    font-weight: 400;
+    border-bottom: 1px solid;
+}
+.socials .box {
+    width: calc(100% / 3);
+    line-height: 100px;
+}
+.socials img {
+    max-height: 40px;
+    vertical-align: middle;
+}
